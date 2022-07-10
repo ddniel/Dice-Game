@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top left, #753681, #B92F3A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 60rem;
+    height: 35rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.253);
+}
+
+section {
+    padding: 6rem 9rem;
+    width: 100%;
+    background-color: #BC7A96;
+    transition: ease-in-out .5s;
+}
+
+section h1 {
+    font-size: 30px;
+    color: #333;
+    padding-bottom: 1rem;
+}
+
+
+.player-active {
+    background-color: #DEAEB8;
+}
+
+
+.score1,
+.score2 {
+    font-size: 60px;
+    color: #C3446B;
+    padding-bottom: 9rem;
+}
+
+/*Buttons*/
+
+button {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.726);
+    font-weight: 500;
+    font-size: 18px;
+    color: #7A7879;
+    padding: .7rem 2rem;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn-new-game {
+    top: 2rem;
+}
+
+.dice {
+    position: absolute;
+    width: 80px;
+    top: 10rem;
+    display: none;
+}
+
+.btn-roll-dice {
+    bottom: 8rem;
+}
+
+.btn-hold {
+    bottom: 4rem;
+}
+
+/* Current Container */
+.current-container {
+    background-color: #C3446B;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.current-container p {
+    margin-bottom: .5rem;
+}
+
+.current-score1,
+.current-score2 {
+    font-size: 30px;
+}
+
+.winner {
+    background-color: #333;
+}
